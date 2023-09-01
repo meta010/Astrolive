@@ -1,0 +1,11 @@
+.section1 {
+    width: 40%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section1>div{
+    margin: 10px 0px;
+}

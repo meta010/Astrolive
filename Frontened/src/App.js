@@ -13,8 +13,8 @@ function App() {
      <Carousel/>
      <CardList/>
      <CssBaseline />
-      <Container component={Box} p={4}>
-        <Paper component={Box} p={3}>
+      <Container component={Box} p={4} style={{margin:"30px auto"}}>
+        <Paper style={{background:"#f5f5f5",padding:"20px 0px 20px 10px",}} component={Box} p={3}>
           <RegistrationComp />
         </Paper>
       </Container>

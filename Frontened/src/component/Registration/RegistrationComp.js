@@ -110,7 +110,7 @@ const RegistrationComp = () => {
   // };
   return (
     <div>
-      <Stepper alternativeLabel activeStep={activeStep}>
+      <Stepper alternativeLabel activeStep={activeStep} style={{background:"#f5f5f5"}}>
         {steps.map((step, index) => {
           const labelProps = {};
           const stepProps = {};
@@ -150,6 +150,7 @@ const RegistrationComp = () => {
                 className={classes.button}
                 disabled={activeStep === 0}
                 onClick={handleBack}
+                color="primary"
               >
                 back
               </Button>
@@ -170,7 +171,7 @@ const RegistrationComp = () => {
                 // onClick={handleNext}
                 type="submit"
               >
-                {activeStep === steps.length - 1 ? "Finish" : "Next"}
+                {activeStep === steps.length - 1 ? "Submit" : "Next"}
               </Button>
             </form>
           </FormProvider>
